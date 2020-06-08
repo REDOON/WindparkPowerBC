@@ -1,0 +1,119 @@
+.business-control {
+    -effect-dropshadow:   dropshadow(  gaussian , #b8c5e4, 15, 0.5,0,0);
+}
+.business-control .editable-node {
+    -fx-font-family:      'Lato Regular';
+    -fx-font-size:        14;
+    -fx-text-fill:        derive(-base-color, -30%);
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+}
+
+.business-control .editable-node:focused {
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+    -fx-highlight-fill:   derive(-base-color, -30%);
+}
+
+.business-control:invalid .editable-node {
+    -fx-font-family: 'Lato Light';
+    -fx-text-fill:   red;
+}
+
+.business-control:mandatory .editable-node {
+    -fx-background-color: white;
+    -fx-border-color:     derive(-base-color, -30%);
+    -fx-border-width:     2;
+    -fx-border-radius:    4;
+}
+
+.business-control:mandatory .editable-node:focused {
+    -fx-background-color: white;
+    -fx-border-color:     derive(-base-color, -30%);
+    -fx-border-width:     2;
+    -fx-border-radius:    4;
+}
+
+.business-control .read-only-node {
+    -fx-font-family:     'DS-Digital';
+    -fx-pref-width:      80;
+    -fx-max-width:       1024;
+    -fx-alignment:       center;
+    -fx-content-display: text-only;
+    -fx-font-size:       22;
+    -fx-text-fill:       rgb(139, 86, 70);
+}
+
+.business-control .chooser-button {
+    -fx-font-family:      'FontAwesome';
+    -fx-border-color:     transparent;
+    -fx-background-color: transparent;
+    -fx-min-width:        26;
+    -fx-min-height:       26;
+    -fx-font-size:        14;
+    -fx-text-fill:        derive(-base-color, -30%);
+    -fx-padding:          5;
+    -fx-content-display:  text-only;
+    -fx-cursor:           hand;
+}
+
+.business-control .chooser-button:hover {
+    -fx-background-color:  derive(-base-color, 70%);
+    -fx-background-radius: 1024;
+    -fx-background-insets: 4;
+}
+.business-control .wwButton{
+    -fx-padding: 20px 0px 0 5px;
+    -fx-background-color:transparent;
+}
+.business-control .lines{
+    -fx-stroke-dash-array: 2 6;
+}
+.business-control .triggers{
+    -fx-fill: transparent;
+    -fx-cursor: hand;
+}
+.business-control .title{
+
+}
+.business-control .input{
+    -fx-max-width: 80;
+}
+.text-field{
+     -fx-text-fill: #575757;
+     -fx-background-color:       #eee;
+     -fx-background-radius:      0.3em;
+     -fx-border-radius:          0.3em;
+     -fx-max-width:              100px;
+     -fx-border-width:           1;
+     -fx-border-style:           solid outside;
+     -fx-padding:                5 25 5 10;
+     -fx-border-color:           -tx-grey;
+     -fx-font-size:              1.0em;
+ }
+.text-field:focused{
+    -fx-border-width:           1;
+    -fx-border-color:           #B0C4DE;
+}
+.business-control:invalid .text-field{
+    -fx-border-color:           red;
+    -fx-background-image: url('../icons/error.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right;
+}
+.business-control:editable .text-field{
+    -fx-border-color:           #eee;
+    -fx-text-fill:              #868686;
+}
+.business-control:convertible .text-field{
+    -fx-text-fill: #80c991;
+}
+.title{
+    -fx-font-style: italic;
+    -fx-font-fill:#575757;
+    -fx-font-size:10pt;
+}
+.business-control .values{
+    -fx-font-fill:#575757;
+    -fx-font-size:10pt;
+}
+
+
